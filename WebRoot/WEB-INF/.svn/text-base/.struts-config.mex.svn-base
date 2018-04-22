@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/index.do" location="1361,618" dimension="202,88" />
+  <StrutsActivity path="/PreColloquiumEntry.do" location="5271,618" dimension="246,88" />
+  <StrutsActivity path="/ColloquiumEntry.do" location="5039,631" dimension="120,62" />
+  <StrutsActivity path="/PostColloquiumEntry.do" location="5056,1095" dimension="230,88" />
+  <StrutsActivity path="/rpx.do" location="279,618" dimension="195,88" />
+  <StrutsActivity path="/newsession.do" location="38,631" dimension="98,62" />
+  <StrutsActivity path="/login.do" location="3420,175" dimension="197,88" />
+  <StrutsActivity path="/signin.do" location="1683,188" dimension="70,62" />
+  <StrutsActivity path="/youraccount.do" location="1663,618" dimension="185,88" />
+  <StrutsActivity path="/logout.do" location="575,618" dimension="193,88" />
+  <StrutsActivity path="/register.do" location="1095,175" dimension="197,88" />
+  <StrutsActivity path="/signup.do" location="892,188" dimension="74,62" />
+  <StrutsActivity path="/registration.do" location="868,618" dimension="192,88" />
+  <StrutsActivity path="/calendar.do" location="2296,618" dimension="221,88" />
+  <StrutsActivity path="/presentColloquium.do" location="1948,618" dimension="248,88" />
+  <StrutsActivity path="/displayTalk.do" location="4231,188" dimension="95,62" />
+  <StrutsActivity path="/bookmarkColloquium.do" location="3261,618" dimension="276,88" />
+  <StrutsActivity path="/profile.do" location="2150,150" dimension="73,62" />
+  <StrutsActivity path="/myaccount.do" location="5646,618" dimension="213,88" />
+  <StrutsActivity path="/PreMakeCommunity.do" location="4764,175" dimension="238,88" />
+  <StrutsActivity path="/makeCommunity.do" location="3945,188" dimension="121,62" />
+  <StrutsActivity path="/PostNewCommunity.do" location="2939,618" dimension="222,88" />
+  <StrutsActivity path="/PreCreateSeries.do" location="4426,175" dimension="238,88" />
+  <StrutsActivity path="/CreateSeries.do" location="3717,188" dimension="105,62" />
+  <StrutsActivity path="/PostNewSeries.do" location="2617,618" dimension="222,88" />
+  <StrutsActivity path="/stat.do" location="2483,1403" dimension="62,62" />
+  <StrutsActivity path="/community.do" location="0,1403" dimension="239,88" />
+  <StrutsActivity path="/series.do" location="284,1403" dimension="215,88" />
+  <StrutsActivity path="/entity.do" location="544,1403" dimension="214,88" />
+  <StrutsActivity path="/topic.do" location="803,1403" dimension="211,88" />
+  <StrutsActivity path="/tag.do" location="1059,1403" dimension="204,88" />
+  <StrutsActivity path="/popAnnotation.do" location="1352,1403" dimension="114,62" />
+  <StrutsActivity path="/popView.do" location="2087,1403" dimension="83,62" />
+  <StrutsActivity path="/recentAnnotation.do" location="1836,1403" dimension="127,62" />
+  <StrutsActivity path="/recentView.do" location="2295,1403" dimension="96,62" />
+  <StrutsActivity path="/lostPassword.do" location="1602,1403" dimension="106,62" />
+  <StrutsActivity path="/.do" location="201,1834" dimension="43,62" />
+  <StrutsActivity path="aaa.index;6" location="1417,363" dimension="91,75" />
+  <StrutsActivity path="aaa.colloquia.PreColloquiumEntry;6" location="5293,363" dimension="203,75" />
+  <StrutsActivity path="aaa.colloquia.ColloquiumEntry;6" location="5006,363" dimension="187,75" />
+  <StrutsActivity path="aaa.authentication.rpx;6" location="300,363" dimension="154,75" />
+  <StrutsActivity path="aaa.authentication.rpxnow;6" location="0,363" dimension="174,75" />
+  <StrutsActivity path="aaa.authentication.login;6" location="3439,0" dimension="160,75" />
+  <StrutsActivity path="aaa.authentication.signin;6" location="1635,0" dimension="165,75" />
+  <StrutsActivity path="aaa.authentication.lostpassword;6" location="1555,1228" dimension="201,75" />
+  <StrutsActivity path="aaa.authentication.logout;6" location="588,363" dimension="168,75" />
+  <StrutsActivity path="aaa.registration.register;6" location="1113,0" dimension="161,75" />
+  <StrutsActivity path="aaa.authentication.signup;6" location="845,0" dimension="169,75" />
+  <StrutsActivity path="aaa.make.community;6" location="3933,0" dimension="145,75" />
+  <StrutsActivity path="aaa.pre.make.community;6" location="4800,0" dimension="165,75" />
+  <StrutsActivity path="aaa.calendar;6" location="2354,363" dimension="106,75" />
+  <StrutsActivity path="aaa.colloquia.presentColloquium;6" location="1973,363" dimension="198,75" />
+  <StrutsActivity path="aaa.colloquia.displayTalk;6" location="4197,0" dimension="162,75" />
+  <StrutsActivity path="aaa.colloquia.profile;6" location="50,750" dimension="140,75" />
+  <StrutsActivity path="aaa.colloquia.MyAccount;6" location="5671,363" dimension="163,75" />
+  <StrutsActivity path="aaa.stat;6" location="2472,1228" dimension="84,75" />
+  <StrutsActivity path="aaa.community;6" location="61,1228" dimension="116,75" />
+  <StrutsActivity path="aaa.tag;6" location="1120,1228" dimension="81,75" />
+  <StrutsActivity path="aaa.colloquia.annotation.popular;6" location="1308,1228" dimension="202,75" />
+  <StrutsActivity path="aaa.colloquia.view.popular;6" location="2043,1228" dimension="172,75" />
+  <StrutsActivity path="aaa.colloquia.annotation.recent;6" location="1801,1228" dimension="197,75" />
+  <StrutsActivity path="aaa.colloquia.view.recent;6" location="2260,1228" dimension="167,75" />
+  <StrutsActivity path="aaa.colloquia.bookmark;6" location="0,1685" dimension="156,75" />
+  <StrutsActivity path="aaa.series;6" location="345,1228" dimension="93,75" />
+  <StrutsActivity path="aaa.pre.create.series;6" location="4471,0" dimension="148,75" />
+  <StrutsActivity path="aaa.create.series;6" location="3705,0" dimension="128,75" />
+  <StrutsActivity path="aaa.entity;6" location="604,1228" dimension="93,75" />
+  <StrutsActivity path="aaa.topic;6" location="864,1228" dimension="88,75" />
+  <StrutsActivity path="aaa.index" location="1596,946" dimension="77,49" />
+  <StrutsActivity path="aaa.colloquia.PreColloquiumEntry" location="5384,946" dimension="189,49" />
+  <StrutsActivity path="aaa.colloquia.ColloquiumEntry" location="5085,946" dimension="173,49" />
+  <StrutsActivity path="aaa.authentication.login" location="4023,946" dimension="146,49" />
+  <StrutsActivity path="aaa.authentication.rpx" location="307,946" dimension="140,49" />
+  <StrutsActivity path="aaa.authentication.rpxnow" location="47,946" dimension="160,49" />
+  <StrutsActivity path="aaa.authentication.signin" location="1680,376" dimension="151,49" />
+  <StrutsActivity path="aaa.authentication.logout" location="547,946" dimension="154,49" />
+  <StrutsActivity path="aaa.registration.register" location="1170,376" dimension="147,49" />
+  <StrutsActivity path="aaa.registration.signup" location="894,376" dimension="141,49" />
+  <StrutsActivity path="aaa.calendar" location="2434,946" dimension="92,49" />
+  <StrutsActivity path="aaa.colloquia.presentColloquium" location="2068,946" dimension="184,49" />
+  <StrutsActivity path="aaa.colloquia.displayTalk" location="4204,376" dimension="148,49" />
+  <StrutsActivity path="aaa.colloquia.profile" location="2750,950" dimension="126,49" />
+  <StrutsActivity path="aaa.colloquia.MyAccount" location="5715,946" dimension="149,49" />
+  <StrutsActivity path="aaa.pre.make.community" location="4794,376" dimension="151,49" />
+  <StrutsActivity path="aaa.make.community" location="3973,376" dimension="131,49" />
+  <StrutsActivity path="aaa.pre.create.series" location="4469,376" dimension="134,49" />
+  <StrutsActivity path="aaa.create.series" location="3741,376" dimension="114,49" />
+  <StrutsActivity path="aaa.stat" location="2479,1565" dimension="70,49" />
+  <StrutsActivity path="aaa.community" location="68,1591" dimension="102,49" />
+  <StrutsActivity path="aaa.series" location="352,1591" dimension="79,49" />
+  <StrutsActivity path="aaa.entity" location="611,1591" dimension="79,49" />
+  <StrutsActivity path="aaa.topic" location="871,1591" dimension="74,49" />
+  <StrutsActivity path="aaa.tag" location="1127,1591" dimension="67,49" />
+  <StrutsActivity path="aaa.colloquia.annotation.popular" location="1315,1565" dimension="188,49" />
+  <StrutsActivity path="aaa.colloquia.view.popular" location="2050,1565" dimension="158,49" />
+  <StrutsActivity path="aaa.colloquia.annotation.recent" location="1808,1565" dimension="183,49" />
+  <StrutsActivity path="aaa.colloquia.view.recent" location="2267,1565" dimension="153,49" />
+  <StrutsActivity path="aaa.authentication.lostpassword" location="1562,1565" dimension="187,49" />
+  <StrutsActivity path="" location="208,1685" dimension="29,49" />
+  <StrutsActivity path="bookmarkTalk.do" location="18,1860" dimension="120,75" />
+  <StrutsTransition id="/PostNewSeries.do,Success,aaa.create.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2765,706" />
+      <AbsolutePoint location="2765,721" />
+      <AbsolutePoint location="3798,721" />
+      <AbsolutePoint location="3798,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.PreColloquiumEntry;6,null,/PreColloquiumEntry.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5424,438" />
+      <AbsolutePoint location="5424,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreColloquiumEntry.do,Success,aaa.colloquia.ColloquiumEntry,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5271,662" />
+      <AbsolutePoint location="5174,662" />
+      <AbsolutePoint location="5174,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostNewSeries.do,Failure,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2706,706" />
+      <AbsolutePoint location="2706,860" />
+      <AbsolutePoint location="1410,860" />
+      <AbsolutePoint location="1410,970" />
+      <AbsolutePoint location="1596,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/recentView.do,null,aaa.colloquia.view.recent,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2343,1465" />
+      <AbsolutePoint location="2343,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.make.community;6,null,/makeCommunity.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4005,75" />
+      <AbsolutePoint location="4005,188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/displayTalk.do,null,aaa.colloquia.displayTalk,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4278,250" />
+      <AbsolutePoint location="4278,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.index;6,null,/index.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1462,438" />
+      <AbsolutePoint location="1462,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/myaccount.do,Success,aaa.colloquia.MyAccount,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5812,706" />
+      <AbsolutePoint location="5812,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/community.do,Success,aaa.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="149,1491" />
+      <AbsolutePoint location="149,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/lostPassword.do,null,aaa.authentication.lostpassword,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1655,1465" />
+      <AbsolutePoint location="1655,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,null,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1563,662" />
+      <AbsolutePoint location="1620,662" />
+      <AbsolutePoint location="1620,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostNewCommunity.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3020,618" />
+      <AbsolutePoint location="3020,-75" />
+      <AbsolutePoint location="4119,-75" />
+      <AbsolutePoint location="4119,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/profile.do,Failure,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2186,181" />
+      <AbsolutePoint location="1634,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id=",null,/.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="223,1734" />
+      <AbsolutePoint location="223,1834" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.pre.make.community;6,null,/PreMakeCommunity.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4882,75" />
+      <AbsolutePoint location="4882,175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ColloquiumEntry.do,null,aaa.colloquia.ColloquiumEntry,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5100,693" />
+      <AbsolutePoint location="5100,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/entity.do,Success,aaa.entity,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="681,1491" />
+      <AbsolutePoint location="681,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,Success,aaa.authentication.signin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3420,227" />
+      <AbsolutePoint location="1768,227" />
+      <AbsolutePoint location="1768,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.tag;6,null,/tag.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1160,1303" />
+      <AbsolutePoint location="1160,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.view.recent;6,null,/recentView.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2343,1303" />
+      <AbsolutePoint location="2343,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.community;6,null,/community.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="119,1303" />
+      <AbsolutePoint location="119,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/community.do,null,aaa.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="119,1491" />
+      <AbsolutePoint location="119,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calendar.do,Success,aaa.calendar,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2449,706" />
+      <AbsolutePoint location="2449,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/youraccount.do,Success,aaa.colloquia.profile,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1755,706" />
+      <AbsolutePoint location="1755,751" />
+      <AbsolutePoint location="2813,751" />
+      <AbsolutePoint location="2813,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/presentColloquium.do,null,aaa.colloquia.presentColloquium,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2160,706" />
+      <AbsolutePoint location="2160,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostNewCommunity.do,Failure,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3050,706" />
+      <AbsolutePoint location="3050,785" />
+      <AbsolutePoint location="1672,785" />
+      <AbsolutePoint location="1672,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.series;6,null,/series.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,1303" />
+      <AbsolutePoint location="391,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostNewSeries.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2728,706" />
+      <AbsolutePoint location="2728,1348" />
+      <AbsolutePoint location="4096,1348" />
+      <AbsolutePoint location="4096,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/registration.do,Success,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="967,706" />
+      <AbsolutePoint location="967,1140" />
+      <AbsolutePoint location="1634,1140" />
+      <AbsolutePoint location="1634,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/series.do,Success,aaa.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,1491" />
+      <AbsolutePoint location="421,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/CreateSeries.do,null,aaa.create.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3768,250" />
+      <AbsolutePoint location="3768,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.view.popular;6,null,/popView.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2129,1303" />
+      <AbsolutePoint location="2129,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,Success,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1462,706" />
+      <AbsolutePoint location="1462,948" />
+      <AbsolutePoint location="1596,948" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,Success,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="716,706" />
+      <AbsolutePoint location="716,1044" />
+      <AbsolutePoint location="1604,1044" />
+      <AbsolutePoint location="1604,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/myaccount.do,Failure,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5752,618" />
+      <AbsolutePoint location="5752,483" />
+      <AbsolutePoint location="4059,483" />
+      <AbsolutePoint location="4059,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calendar.do,null,aaa.calendar,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2480,706" />
+      <AbsolutePoint location="2480,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/profile.do,null,aaa.colloquia.profile,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2223,190" />
+      <AbsolutePoint location="2854,190" />
+      <AbsolutePoint location="2854,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.annotation.recent;6,null,/recentAnnotation.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1899,1303" />
+      <AbsolutePoint location="1899,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tag.do,Success,aaa.tag,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1191,1491" />
+      <AbsolutePoint location="1191,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/stat.do,null,aaa.stat,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2514,1465" />
+      <AbsolutePoint location="2514,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bookmarkColloquium.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3537,662" />
+      <AbsolutePoint location="4029,662" />
+      <AbsolutePoint location="4029,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.make.community,null,/PostNewCommunity.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3978,376" />
+      <AbsolutePoint location="3978,308" />
+      <AbsolutePoint location="3080,308" />
+      <AbsolutePoint location="3080,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.registration.register;6,null,/register.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1193,75" />
+      <AbsolutePoint location="1193,175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/topic.do,null,aaa.topic,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="908,1491" />
+      <AbsolutePoint location="908,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.calendar;6,null,/calendar.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2407,438" />
+      <AbsolutePoint location="2407,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/youraccount.do,Failure,aaa.authentication.signin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1785,618" />
+      <AbsolutePoint location="1785,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostNewCommunity.do,Success,aaa.make.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3050,618" />
+      <AbsolutePoint location="3050,120" />
+      <AbsolutePoint location="4093,120" />
+      <AbsolutePoint location="4093,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.signin;6,null,/signin.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1717,75" />
+      <AbsolutePoint location="1717,188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/registration.do,Failure,aaa.registration.signup,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="994,618" />
+      <AbsolutePoint location="994,425" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rpx.do,Home,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="406,706" />
+      <AbsolutePoint location="406,900" />
+      <AbsolutePoint location="1598,900" />
+      <AbsolutePoint location="1598,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,null,aaa.registration.register,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1193,263" />
+      <AbsolutePoint location="1193,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signup.do,null,aaa.registration.signup,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="929,250" />
+      <AbsolutePoint location="929,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bookmarkColloquium.do,Failure,aaa.calendar,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3429,706" />
+      <AbsolutePoint location="3429,900" />
+      <AbsolutePoint location="2510,900" />
+      <AbsolutePoint location="2510,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signin.do,null,aaa.authentication.signin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1718,250" />
+      <AbsolutePoint location="1718,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.signin,null,/youraccount.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1755,425" />
+      <AbsolutePoint location="1755,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.displayTalk,null,/bookmarkColloquium.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4278,425" />
+      <AbsolutePoint location="4278,551" />
+      <AbsolutePoint location="3399,551" />
+      <AbsolutePoint location="3399,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreMakeCommunity.do,null,aaa.pre.make.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4913,263" />
+      <AbsolutePoint location="4913,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.profile;6,null,/profile.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="190,807" />
+      <AbsolutePoint location="2220,807" />
+      <AbsolutePoint location="2220,212" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreColloquiumEntry.do,null,aaa.colloquia.PreColloquiumEntry,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5399,706" />
+      <AbsolutePoint location="5399,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.displayTalk;6,null,/displayTalk.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4278,75" />
+      <AbsolutePoint location="4278,188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.ColloquiumEntry;6,null,/ColloquiumEntry.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5099,438" />
+      <AbsolutePoint location="5099,631" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/calendar.do,Failure,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2406,706" />
+      <AbsolutePoint location="2406,1198" />
+      <AbsolutePoint location="1664,1198" />
+      <AbsolutePoint location="1664,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.rpxnow;6,null,/newsession.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="87,438" />
+      <AbsolutePoint location="87,631" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newsession.do,null,aaa.authentication.rpxnow,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="38,662" />
+      <AbsolutePoint location="-75,662" />
+      <AbsolutePoint location="-75,970" />
+      <AbsolutePoint location="47,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,null,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3552,263" />
+      <AbsolutePoint location="3552,970" />
+      <AbsolutePoint location="4023,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.login;6,null,/login.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3519,75" />
+      <AbsolutePoint location="3519,175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.presentColloquium;6,null,/presentColloquium.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2094,438" />
+      <AbsolutePoint location="2094,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/topic.do,Success,aaa.topic,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="938,1491" />
+      <AbsolutePoint location="938,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.stat;6,null,/stat.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2514,1303" />
+      <AbsolutePoint location="2514,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.pre.create.series;6,null,/PreCreateSeries.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4545,75" />
+      <AbsolutePoint location="4545,175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.create.series;6,null,/CreateSeries.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3769,75" />
+      <AbsolutePoint location="3769,188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/profile.do,Success,aaa.colloquia.profile,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2186,150" />
+      <AbsolutePoint location="2186,45" />
+      <AbsolutePoint location="2571,45" />
+      <AbsolutePoint location="2571,974" />
+      <AbsolutePoint location="2750,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rpx.do,null,aaa.authentication.rpx,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="376,706" />
+      <AbsolutePoint location="376,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/series.do,null,aaa.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,1491" />
+      <AbsolutePoint location="391,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/rpx.do,Success,aaa.authentication.rpxnow,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="279,662" />
+      <AbsolutePoint location="205,662" />
+      <AbsolutePoint location="205,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.signup;6,null,/signup.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="929,75" />
+      <AbsolutePoint location="929,188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bookmarkColloquium.do,Success,aaa.colloquia.presentColloquium,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3399,706" />
+      <AbsolutePoint location="3399,840" />
+      <AbsolutePoint location="2190,840" />
+      <AbsolutePoint location="2190,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreCreateSeries.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4454,263" />
+      <AbsolutePoint location="4454,721" />
+      <AbsolutePoint location="4149,721" />
+      <AbsolutePoint location="4149,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,null,aaa.authentication.logout,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="671,706" />
+      <AbsolutePoint location="671,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,Success,aaa.registration.signup,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1095,219" />
+      <AbsolutePoint location="981,219" />
+      <AbsolutePoint location="981,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreColloquiumEntry.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5394,618" />
+      <AbsolutePoint location="5394,581" />
+      <AbsolutePoint location="4089,581" />
+      <AbsolutePoint location="4089,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/myaccount.do,null,aaa.colloquia.MyAccount,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5782,706" />
+      <AbsolutePoint location="5782,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/youraccount.do,Success,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1741,706" />
+      <AbsolutePoint location="1741,970" />
+      <AbsolutePoint location="1673,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostColloquiumEntry.do,Success,aaa.colloquia.ColloquiumEntry,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5141,1095" />
+      <AbsolutePoint location="5141,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.lostpassword;6,null,/lostPassword.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1655,1303" />
+      <AbsolutePoint location="1655,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreMakeCommunity.do,Login,aaa.authentication.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4960,263" />
+      <AbsolutePoint location="4960,970" />
+      <AbsolutePoint location="4169,970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreCreateSeries.do,Success,aaa.create.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4545,263" />
+      <AbsolutePoint location="4545,278" />
+      <AbsolutePoint location="3798,278" />
+      <AbsolutePoint location="3798,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.rpx;6,null,/rpx.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="377,438" />
+      <AbsolutePoint location="377,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/popAnnotation.do,null,aaa.colloquia.annotation.popular,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1409,1465" />
+      <AbsolutePoint location="1409,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/popView.do,null,aaa.colloquia.view.popular,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2128,1465" />
+      <AbsolutePoint location="2128,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.bookmark;6,null,bookmarkTalk.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="78,1760" />
+      <AbsolutePoint location="78,1860" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/makeCommunity.do,null,aaa.make.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4008,250" />
+      <AbsolutePoint location="4008,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.MyAccount;6,null,/myaccount.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5782,438" />
+      <AbsolutePoint location="5782,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreMakeCommunity.do,Success,aaa.make.community,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4883,263" />
+      <AbsolutePoint location="4883,338" />
+      <AbsolutePoint location="4038,338" />
+      <AbsolutePoint location="4038,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/entity.do,null,aaa.entity,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="651,1491" />
+      <AbsolutePoint location="651,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.entity;6,null,/entity.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1303" />
+      <AbsolutePoint location="650,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.annotation.popular;6,null,/popAnnotation.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1409,1303" />
+      <AbsolutePoint location="1409,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.registration.signup,null,/registration.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="964,425" />
+      <AbsolutePoint location="964,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.authentication.logout;6,null,/logout.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="672,438" />
+      <AbsolutePoint location="672,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tag.do,null,aaa.tag,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1161,1491" />
+      <AbsolutePoint location="1161,1591" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/presentColloquium.do,Failure,aaa.index,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2072,618" />
+      <AbsolutePoint location="2072,529" />
+      <AbsolutePoint location="1650,529" />
+      <AbsolutePoint location="1650,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.topic;6,null,/topic.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="908,1303" />
+      <AbsolutePoint location="908,1403" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/recentAnnotation.do,null,aaa.colloquia.annotation.recent,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1899,1465" />
+      <AbsolutePoint location="1899,1565" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PreCreateSeries.do,null,aaa.pre.create.series,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4575,263" />
+      <AbsolutePoint location="4575,376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/presentColloquium.do,Success,aaa.colloquia.presentColloquium,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2083,706" />
+      <AbsolutePoint location="2083,946" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.create.series,null,/PostNewSeries.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3741,400" />
+      <AbsolutePoint location="2728,400" />
+      <AbsolutePoint location="2728,618" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/PostColloquiumEntry.do,Failure,aaa.colloquia.ColloquiumEntry,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5201,1095" />
+      <AbsolutePoint location="5201,995" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="aaa.colloquia.ColloquiumEntry,null,/PostColloquiumEntry.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5171,995" />
+      <AbsolutePoint location="5171,1095" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

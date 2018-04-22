@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cometrepo/!svn/ver/605/comet/WebRoot/speaker
+END
+speakerprofile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cometrepo/!svn/ver/591/comet/WebRoot/speaker/speakerprofile.jsp
+END
+speakerlist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/512/comet/WebRoot/speaker/speakerlist.jsp
+END
+loadCoAuthors.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/605/comet/WebRoot/speaker/loadCoAuthors.jsp
+END

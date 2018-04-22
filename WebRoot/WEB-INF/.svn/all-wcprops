@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cometrepo/!svn/ver/475/comet/WebRoot/WEB-INF
+END
+fmt-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/fmt-1_0.tld
+END
+x-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/x-1_0-rt.tld
+END
+sql-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/sql-1_0.tld
+END
+c.tld
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/c.tld
+END
+aaa-tiles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/718/comet/WebRoot/WEB-INF/aaa-tiles.xml
+END
+struts-template.tld
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-template.tld
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/validator-rules.xml
+END
+fn.tld
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/fn.tld
+END
+struts-menu.tld
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-menu.tld
+END
+sql-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/sql-1_0-rt.tld
+END
+x-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/x-1_0.tld
+END
+fmt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/fmt.tld
+END
+fmt-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/fmt-1_0-rt.tld
+END
+sql.tld
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/sql.tld
+END
+permittedTaglibs.tld
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/permittedTaglibs.tld
+END
+.struts-config.mex
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/.struts-config.mex
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-logic.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-html.tld
+END
+scriptfree.tld
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/scriptfree.tld
+END
+c-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/c-1_0-rt.tld
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/729/comet/WebRoot/WEB-INF/struts-config.xml
+END
+c-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/c-1_0.tld
+END
+x.tld
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/x.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-bean.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-tiles.tld
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/368/comet/WebRoot/WEB-INF/web.xml
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/WEB-INF/struts-nested.tld
+END

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>LinkedIn JavaScript API Hello World</title>
+
+<!-- 1. Include the LinkedIn JavaScript API and define a onLoad callback function
+  //p76qgK1ZG4Ae41NgAzI9SLeJhrbxawHLZpFstB84F69aS9SqYcAjgC8_B0ui2U7I
+ -->
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: O9aW2MKcw2Uwv42xuFnfBywwYQ4oSdAkBL7NtNyCYUktF7v0Jcs8uKwmqSDOnxl8
+  onLoad: onLinkedInLoad
+  authorize: true
+</script>
+  <link type="text/css" href="../css/jquery-ui-1.8.5.custom.css" rel=
+  "stylesheet" /> 
+  <script type="text/javascript" src="../scripts/jquery-1.4.2.min.js"> 
+</script> 
+  <script type="text/javascript" src="../scripts/jquery-ui-1.8.5.custom.min.js"> 
+</script> 
+
+<script type="text/javascript">
+  function onLinkedInLoad() {
+    IN.Event.on(IN, "auth", onLinkedInAuth);
+  }
+  function onLinkedInAuth() {
+    IN.API.Profile("me").fields("id","firstName", "lastName", "industry","headline",
+    	    "siteStandardProfileRequest", "pictureUrl", "publicProfileUrl")
+    .result(displayProfiles)
+    .error( function(e) {alert("something broken " + e);} );
+  }
+  function displayProfiles(profiles) {
+    member = profiles.values[0];
+    document.getElementById("profiles").innerHTML = 
+      "<p>ID: " + member.id + "</p>"+
+      "<p>FirstName: "+member.firstName + "</p>" +
+      "<p>LastName:" + member.lastName + "</p>" +
+      "<p>industry: " + member.industry+"</p>" +
+      "<p>headline: " + member.headline+"</p>" +
+      "<p>siteStandardProfileRequest.url: " + member.siteStandardProfileRequest.url + "</p>" +
+      "<p>Picture URL: " + member.pictureUrl + "</p>" +
+      "<p>Public Profile URL: " + member.publicProfileUrl + "</p>";
+  }
+</script>
+</head>
+<body topmargin="0" leftmargin="0">
+
+
+<script type="IN/Login"></script>
+
+
+<div id="profiles"></div>
+<!--  
+<p><a href="http://halley.exp.sis.pitt.edu/comet/utils/friendlinks.html">Friend Links</p>
+-->
+
+</body>
+</html>

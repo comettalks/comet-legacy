@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cometrepo/!svn/ver/550/comet/WebRoot/ensemble
+END
+getNodeStatCategory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cometrepo/!svn/ver/565/comet/WebRoot/ensemble/getNodeStatCategory.jsp
+END
+getNodeStat.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/563/comet/WebRoot/ensemble/getNodeStat.jsp
+END
+postNodeStat.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/559/comet/WebRoot/ensemble/postNodeStat.jsp
+END

@@ -1,0 +1,46 @@
+10
+
+dir
+361
+http://halley.exp.sis.pitt.edu/svn/cometrepo/comet/WebRoot/ckeditor/_tests/plugins
+http://halley.exp.sis.pitt.edu/svn/cometrepo
+
+
+
+2011-10-18T18:09:47.545592Z
+5
+chirayu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+aa5327e5-e9af-40ea-a733-f4ade88149f0
+
+domiterator
+dir
+
+htmldataprocessor
+dir
+
+link
+dir
+
+list
+dir
+
+selection
+dir
+
+styles
+dir
+

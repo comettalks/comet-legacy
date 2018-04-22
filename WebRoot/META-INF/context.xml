@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="aaa" path="/aaa" debug="1" reloadable="true" crossContext="true">
+	<Manager className="org.apache.catalina.session.PersistentManager"
+		saveOnRestart="false" />
+
+<!-- Access to Database -->	
+	<Resource name="jdbc/colloquia"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="chirayu"
+		password="yes"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/colloquia?autoReconnect=true"
+		maxActive="1000"
+		maxIdle="50"
+		maxWait="15000"
+		removeAbandoned="true"
+		logAbandoned="true" />
+    <ResourceParams>
+       
+    </ResourceParams>        
+</Context>

@@ -1,0 +1,10 @@
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+edu.pitt.sis.paws.widget.client.CommRating, true, true, false, false, edu.pitt.sis.paws.widget.client.CommRating/3406019248, 3406019248
+[Ledu.pitt.sis.paws.widget.client.CommRating;, true, true, false, false, [Ledu.pitt.sis.paws.widget.client.CommRating;/523349867, 523349867
+edu.pitt.sis.paws.widget.client.SliderBarFeedbackService, false, false, false, false, _, 463067998
+java.lang.Double, true, true, false, false, java.lang.Double/858496421, 858496421
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.Number, true, false, false, false, java.lang.Number/300033342, 300033342
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131

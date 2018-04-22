@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>LinkedIn : Friend Links</title>
+
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: p76qgK1ZG4Ae41NgAzI9SLeJhrbxawHLZpFstB84F69aS9SqYcAjgC8_B0ui2U7I
+  onLoad: onLinkedInLoad
+  authorize: true
+</script>
+
+<script type="text/javascript">
+  function onLinkedInLoad() {
+    IN.Event.on(IN, "auth", onLinkedInAuth);
+  }
+
+  function onLinkedInAuth() {
+    IN.API.Connections("me")
+      .fields("id","firstName", "lastName", "industry","headline",
+      	    "siteStandardProfileRequest", "pictureUrl", "publicProfileUrl")
+      .result(displayConnections)
+      .error(displayConnectionErrors);
+  }
+
+  function displayConnections(connections) {
+    var connectionsDiv = document.getElementById("connections");
+
+    var members = connections.values;
+    for (var member in members) {
+      connectionsDiv.innerHTML += "<p>"+member+"</p>"+
+      "<p>ID: " + members[member].id + "</p>"+
+      "<p>FirstName: "+members[member].firstName + "</p>"+
+      "<p>LastName:" + members[member].lastName + "</p>"+
+      "<p>industry: " + members[member].industry+"</p>"+
+      "<p>headline: " + members[member].headline+"</p>"+
+      "<p>apiStandardProfileRequest.url: " + members[member].apiStandardProfileRequest.url + "</p>" +
+      "<p>Picture URL: " + members[member].pictureUrl + "</p>" +
+      "<p>Public Profile URL: " + members[member].publicProfileUrl + "</p>";
+    }
+  }
+
+  function displayConnectionsErrors(error) {}
+</script>
+</head>
+<body>
+
+<div id="connections"></div>
+
+</body>
+</html>

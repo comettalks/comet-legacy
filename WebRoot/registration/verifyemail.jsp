@@ -1,0 +1,68 @@
+<%@ page language="java"%>
+<%@ page import="edu.pitt.sis.db.connectDB"%>
+<%@ page import="java.sql.*"%>
+
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-html" prefix="html" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-logic" prefix="logic" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-nested" prefix="nested" %>
+
+<%
+	String hashedsign = (String)request.getParameter("h");
+	if(hashedsign == null){
+%>
+	<p>We're sorry but it seems you are missing the authentication code, please try again with your email</p>
+<%
+	}else{
+		//Trasform hashedsign into Integer for further comparison
+		int hashedCode = Integer.parseInt(hashedsign);
+		//Connect to DB
+		connectDB conn = new connectDB();
+		//find user data based on the hashCode
+		String sql = "SELECT uc.user_id,uc.name FROM userinfo_copy uc WHERE uc.signedhash=?";
+
+		PreparedStatement pstmt = conn.conn.prepareStatement(sql);
+		pstmt.setInt(1,hashedCode);
+
+		ResultSet rs = pstmt.executeQuery();//user in the user_copy who is passing varification code
+		
+		if(rs.next()){
+			//Insert the user info and delete the data in copy
+			int uid = rs.getInt("user_id");
+			String name = rs.getString("name");
+
+			sql = "INSERT INTO userinfo (name,email,pass,role_id,lastupdate) " +
+					"SELECT name,email,pass,1,NOW() FROM userinfo_copy WHERE user_id="+uid;
+			conn.executeUpdate(sql);
+			
+			//Get the new user_id from the userinfo table, storing real user id into 'ruid' in Integer
+			sql = "SELECT LAST_INSERT_ID()";
+			rs = conn.getResultSet(sql);
+			if(rs.next()){
+				int ruid = rs.getInt(1);
+
+				sql = "DELETE FROM userinfo_copy WHERE user_id=" + uid;
+				conn.executeUpdate(sql);
+
+				//affiliate_user transition, first select
+				//insertion
+				sql = "INSERT INTO affiliate_user (affiliate_id,user_id) " +
+						"SELECT affiliate_id," + ruid + " FROM affiliate_user_copy WHERE user_id="+uid;
+				conn.executeUpdate(sql);
+
+				//delete the copy data
+				sql = "DELETE FROM affiliate_user_copy WHERE user_id = " + uid;
+				conn.executeUpdate(sql);
+			}
+%>
+	<p>Congratulations, <%=name %>! Your account has been successfully set up!</p>
+	<a href="login.do"><img alt="Click here to login" src="" ></a>
+<%
+		}else{
+%>
+	<p>Authentication Failed please check your email one more time</p>
+<%
+		}
+	}	
+%>

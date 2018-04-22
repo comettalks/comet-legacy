@@ -1,0 +1,555 @@
+<%@ page language="java"%>
+
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-html" prefix="html" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-logic" prefix="logic" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-template" prefix="template" %>
+<%@ taglib uri="http://jakarta.apache.org/struts/tags-nested" prefix="nested" %>
+
+<%
+	session=request.getSession(false);	
+	String redirect = (String)session.getAttribute("redirect");
+	int affiliate_id = -1;
+	if(request.getParameter("affiliate_id") != null){
+		affiliate_id = Integer.parseInt((String)request.getParameter("affiliate_id"));
+	}
+	if(redirect != null){
+		session.removeAttribute("redirect");
+%>
+	<script>
+		window.location="<%=redirect%>";
+	</script>
+<%		
+	}
+%>
+	<style>
+		tr.trPopTalk, tr.trPopVideo, tr.trTop3Recent, tr.trCal{
+			display: none;
+		}
+	</style>	
+	
+	<!-- Edit by Wenbang -->
+	<style>
+		.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+		.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+		.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+		.cs-buttons a {
+			cursor:pointer;
+		    border-radius: 50%;
+		    background: #CCC;
+		    background: -webkit-linear-gradient(top,  #CCCCCC, #F3F3F3); /* webkit browsers */
+		    background:    -moz-linear-gradient(top,  #CCCCCC, #F3F3F3); /* firefox 3.6+ */
+		    background:      -o-linear-gradient(top,  #CCCCCC, #F3F3F3); /* opera */
+		    background:     -ms-linear-gradient(top,  #CCCCCC, #F3F3F3); /* IE10 */
+		    background:         linear-gradient(top,  #CCCCCC, #F3F3F3); /* css3 */      
+		}
+		a.cs-active {
+		    background: #599BDC;
+		    background: -webkit-linear-gradient(top,  #599BDC, #3072B3); /* webkit browsers */
+		    background:    -moz-linear-gradient(top,  #599BDC, #3072B3); /* firefox 3.6+ */
+		    background:      -o-linear-gradient(top,  #599BDC, #3072B3); /* opera */
+		    background:     -ms-linear-gradient(top,  #599BDC, #3072B3); /* IE10 */
+		    background:         linear-gradient(top,  #599BDC, #3072B3); /* css3 */  
+		    border-radius: 50%;    
+		    box-shadow: 0 0 3px #518CC6;   
+		    border: 1px solid #3072B3 !important;     
+		}	
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+		   $("#prev").click(function(){
+		   	$(".cs-buttons a").removeClass("cs-active");
+			if ($(".slider .inner .innerslider:visible").prev().is(".innerslider")) {
+	   			$(".cs-buttons a").eq($(".slider .inner .innerslider:visible").prev().index()-1).addClass("cs-active");
+	   		} else {
+	   			$(".cs-buttons a:last").addClass("cs-active");
+	   		}
+		   	$(".slider .inner .innerslider:visible").fadeOut(600,
+		   	function() {
+		   		if ($(this).prev().is(".innerslider")) {
+		   			$(this).prev().fadeIn(600);
+		   		} else {
+		   			$(".slider .inner .innerslider:last").fadeIn(600);
+		   		}
+		   	});
+		   });
+		   $("#next").click(function(){
+				$(".cs-buttons a").removeClass("cs-active");
+				if ($(".slider .inner .innerslider:visible").next().is(".innerslider")) {
+					$(".cs-buttons a").eq($(".slider .inner .innerslider:visible").index()-1).addClass("cs-active");
+				} else {
+					$(".cs-buttons a:first").addClass("cs-active");
+				}
+				$(".slider .inner .innerslider:visible").fadeOut(600,
+				function(){
+					if ($(this).next().is(".innerslider")) {
+						$(this).next().fadeIn(600);
+					} else {
+						$(".slider .inner .innerslider:first").fadeIn(600);
+					}
+				});
+		   });
+		   
+		   	$(".cs-buttons a").click(function(){
+		   		if(!$(this).hasClass("cs-active")){
+		   			$a = $(this);
+  					$(".cs-buttons a").removeClass("cs-active");
+			   		$(this).addClass("cs-active");
+			   		
+	 				$(".slider .inner .innerslider:visible").fadeOut(600,
+				   	function(){
+						$(".slider .inner .innerslider").eq(parseInt($a.text())).fadeIn(600);
+				   	});
+		   		}
+		   });
+		   
+		   
+
+		});
+	</script>
+	<!-- Edit by Wenbang -->
+	<table cellspacing="0" cellpadding="0" width="100%" align="center">
+		<tr>
+			<td width="70%" valign="top">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<div class="cs-buttons" style="display: none; left: 50%; margin-left: -40px; position: relative;">
+								<a  class="cs-active">0</a>
+								<a >1</a>
+								<a >2</a>
+								<a >3</a>
+							</div>
+						</td>					
+					</tr>
+					<tr>
+						<td valign="top" id="sliderTd">
+							<!-- Edit by Wenbang -->
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="slider span12">
+										<div class="inner">
+											<script type="text/javascript">
+												var slider1;
+												var slider2;
+												var slider3;
+												$(document).ready(function(){
+													
+													$('#Loading').show('slow');
+/* 													$.get('bak/loadTalks.jsp',{poprecent: 1, rows: 3},
+														function(data1){
+															$('#recentTalks').html(data1);
+															slider2 = $("#2").innerHeight();
+															console.log("slider2 "+slider2);
+															$("#2").css({"position": "", "visibility": "", "display": "none"});
+														}
+													);
+													$.get('bak/loadTalks.jsp',{topvideo: 1, rows: 2},
+														function(data2){
+															$('#pastVTalks').html(data2);
+															slider3 = $("#3").innerHeight();
+															console.log("slider3 "+slider3);
+															$("#3").css({"position": "", "visibility": "", "display": "none"});
+														}
+													); */
+													$.get('utils/loadTalks.jsp',{mostrecent: 1, rows: 5},
+															function(data){
+															$('#mostPopTalks').html(data);
+															var b,
+															a = function(){
+																$("#next").trigger("click");
+																b = setTimeout(a, 5000); 
+															};
+															$(".slider").hover(function(){
+																clearTimeout(b);
+															},
+															function(){
+																b = setTimeout(a, 5000);
+															});
+															$(".cs-buttons").hover(function(){
+																clearTimeout(b);
+															},
+															function(){
+																b = setTimeout(a, 5000);
+															});
+															b = setTimeout(a, 5000);
+															
+															slider1 = $("#mostPopTalks").innerHeight();
+															console.log("slider1 "+slider1);
+															console.log(slider2==null);
+															//console.log(Math.max(slider1, Math.max(slider2, slider3)));
+															//$("#sliderTd").css("height", Math.max(slider1, Math.max(slider2, slider3)));
+															$(".cs-buttons").css("display", "");
+														}
+													);
+													$.get('utils/loadTalks.jsp',{poprecent: 1, rows: 3},
+														function(data1){
+															$('#recentTalks').html(data1);
+															slider2 = $("#2").innerHeight();
+															console.log("slider2 "+slider2);
+															$("#2").css({"position": "", "visibility": "", "display": "none"});
+														}
+													);
+													$.get('utils/loadTalks.jsp',{topvideo: 1, rows: 2},
+														function(data2){
+															$('#pastVTalks').html(data2);
+															slider3 = $("#3").innerHeight();
+															console.log("slider3 "+slider3);
+															$("#3").css({"position": "", "visibility": "", "display": "none"});
+														}
+													);
+													$.get('utils/popSeries.jsp',{rows: 5},
+														function(data){
+															$('#popS').html(data);
+															$('#popS').show();
+														}
+													);
+													$.get('utils/popCommunity.jsp',{rows: 5},
+														function(data){
+															$('#popC').html(data);
+															$('#popC').show();
+														}
+													);
+													/* console.log("slider1 "+slider1);
+													console.log("slider2 "+slider2);
+													console.log("slider3 "+slider3); */	
+													/* while(slider1==null||slider2==null||slider3==null)
+													{
+														console.log("1");
+													}	 */												
+												});
+												$("#1", "#2", "#3").ready(function(){
+												
+													console.log("slider1 "+slider1);
+													console.log("slider2 "+slider2);
+													console.log("slider3 "+slider3);
+												
+												});
+											</script>	
+											<span style="display: none;"></span>
+											<div id="mostPopTalks" class="innerslider">
+												<div id="Loading" style="display: none;" align='center'><img border='0' src='images/loading.gif' /></div>
+											</div>
+											<div style="visibility:hidden; position: absolute; display: block;" class="innerslider" id="2">
+											<!-- <div style="display: none;" class="innerslider" id="2"> -->
+												<h3>Popular Forthcoming Talks</h3>
+												<div id="recentTalks"></div>
+											</div>
+											<div style="visibility:hidden; position: absolute; display: block;" class="innerslider" id="3">
+												<h3>Past Popular Talks with Video</h3>
+												<div id="pastVTalks"></div>
+											</div>
+											
+											<div style="display: none;" class="innerslider" id="4">
+												<table>
+													<tr style="width: 100%;">
+														<td id="popS" style="width: 50%;" valign="top">
+														</td>
+														<td id="popC" style="width: 50%;" valign="top">
+														</td>
+													</tr>
+												</table>
+											</div>
+											
+											<span style="display: none;"></span>
+										</div>
+										<p id="prev" style="display: none;">´</p>
+										<p id="next" style="display: none;">ª</p>
+										
+									</div>								
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!-- Edit by Wenbang -->
+					
+<!-- 					<tr>
+						<td id="tdTop3Recent">
+						<div id="divTop3RecentLoading" style="display: none;" align='center'><img border='0' src='images/loading.gif' /></div>
+							<script type="text/javascript">
+								$(document).ready(function(){
+
+									$('#divTop3RecentLoading').show('slow');
+									
+									$.get('utils/loadTalks.jsp',{mostrecent: 1, rows: 3},
+										function(data){
+											$('#tdTop3Recent').html(data);
+											$('.trTop3Recent').show('fast');
+
+											$.get('utils/loadTalks.jsp',{mostrecent: 1, start: 3, noheader: 1},
+													function(data){
+														$('#tdMostRecent').html(data);
+													}
+												);
+
+/* 											$.get('bak/popSeries.jsp',{rows: 5},
+													function(data){
+														$('#tdPopSeries').html(data);
+														$('#tdPopSeries').show('fast');
+													}
+												);
+
+											$.get('bak/popCommunity.jsp',{rows: 5},
+													function(data){
+														$('#tdPopCommunity').html(data);
+														$('#tdPopCommunity').show('fast');
+													}
+												); */
+											
+										}
+									);
+								});
+							</script>
+						</td>
+					</tr>
+					<tr class="trTop3Recent">
+						<td>
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+								<tr>
+									<td>
+										<div id="divMostRecent">
+											<table border="0" cellspacing="0" cellpadding="0" width="95%" align="center">
+												<tr>
+													<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+												</tr>
+												<tr>
+													<td bgcolor="#efefef" style="font-size: 0.9em;font-weight: bold;text-align: center;">
+														&nbsp;
+														<input class="btn" type="button" id="btnShowRecentMore"
+															onclick="showRecentTalksMore();"
+															value="Show More" />
+													</td>
+												</tr>
+												<tr>
+													<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+												</tr>
+											</table>	
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr> -->
+					<logic:present name="UserSession">
+						<tr>
+							<td>
+								<table border="0" cellpadding="0" cellspacing="0" width="95%" align="center">
+									<tr>
+										<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+									</tr>
+									<tr>
+										<td id="tdActStream">
+											<script type="text/javascript">
+												$(document).ready(function(){
+													$.get('includes/bookmarks.jsp',{v: 'activity',hiderightbar: 1,showstream: 1,rows: 20},
+														function(data){
+															$('#tdActStream').html(data);
+															$('#tdActStream').show('fast');
+															//alert($('#btnLoadAct').length);
+															if($('#btnLoadAct').length){
+																//alert('btnLoadAct found!!!');
+																$('#btnLoadAct').click();
+															}else{
+																//alert('btnLoadAct not found!!!');
+															}
+														}
+													);
+												});
+											</script>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</logic:present>
+					<logic:notPresent name="UserSession">
+					
+					</logic:notPresent>
+					
+				</table>
+			</td>			
+			<td>&nbsp;</td>
+			<td width="30%" valign="top">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr class="trCal">
+						<td>
+							<table cellpadding="0" cellspacing="0" width="100%" align="center">
+								<tr>
+									<td>
+										<div id="divCal">
+											<script type="text/javascript">
+												$(document).ready(function(){
+													$.get('includes/calendar.jsp',{nofeed: 1,mostrecent: 1},
+														function(data){
+															$('#divCal').html(data);
+															$('.trCal').show('slow');
+														}
+													);
+												});
+											</script>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<%-- <tr class="trPopTalk">
+						<td bgcolor="#00468c"><div style="height: 2px;overflow: hidden;">&nbsp;</div></td>
+					</tr>
+					<tr class="trPopTalk">
+						<td bgcolor="#efefef" style="font-size: 0.95em;font-weight: bold;">Popular Forthcoming Talks</td>
+					</tr>
+					<tr class="trPopTalk">
+						<td>
+							<table id="tblPopTalk" style="border: 1px solid #efefef;background-color: #add8e6;" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+								<tr>
+									<td id="tdPopTalk">
+										<script type="text/javascript">
+											$(document).ready(function(){
+												$.get('utils/loadTalks.jsp',{poprecent: 1, rows: 3, concise: 1},
+													function(data){
+														$('#tdPopTalk').html(data);
+														$('.trPopTalk').show('slow');
+													}
+												);
+											});
+										</script>
+									</td>
+								</tr>
+								<tr>
+									<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr class="trPopTalk">
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+								<tr>
+									<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+								<tr>
+									<td bgcolor="#efefef" style="font-size: 0.9em;font-weight: bold;text-align: center;">
+										&nbsp;
+										<input class="btn" type="button" id="btnShowRecentMore"
+											onclick="window.location='popComingCoMeTTalk.do<%if(affiliate_id>0)out.print("?affiliate_id="+affiliate_id);%>'"
+											value="Show More" />
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+					<tr class="trPopTalk">
+						<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+					</tr>
+					<tr class="trPopVideo">
+						<td style="background-color: #f08080;" id="tdPopVideo">
+							<script type="text/javascript">
+								$(document).ready(function(){
+									$.get('utils/loadTalks.jsp',{topvideo: 1, rows: 1, concise: 1},
+										function(data){
+											$('#tdPopVideo').html(data);
+											$('.trPopVideo').show('slow');
+										}
+									);
+								});
+							</script>
+						</td>
+					</tr>
+					<tr class="trPopVideo">
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+								<tr>
+									<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+								<tr>
+									<td bgcolor="#efefef" style="font-size: 0.9em;font-weight: bold;text-align: center;">
+										&nbsp;
+										<input class="btn" type="button" id="btnShowRecentMore"
+											onclick="window.location='popVideo.do<%if(affiliate_id>0)out.print("?affiliate_id="+affiliate_id);%>'"
+											value="Show More" />
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#efefef"><div style="height: 4px;overflow: hidden;">&nbsp;</div></td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+					<tr class="trPopVideo">
+						<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+					</tr>
+					<tr>
+						<td id="tdPopSeries" style="display: none;">
+							<script type="text/javascript">
+								$(document).ready(function(){
+									$.get('utils/popSeries.jsp',{rows: 5},
+										function(data){
+											$('#tdPopSeries').html(data);
+											$('#tdPopSeries').show();
+										}
+									);
+								});
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+					</tr>
+					<tr>
+						<td id="tdPopCommunity" style="display: none;">
+							<script type="text/javascript">
+								$(document).ready(function(){
+									$.get('utils/popCommunity.jsp',{rows: 5},
+										function(data){
+											$('#tdPopCommunity').html(data);
+											$('#tdPopCommunity').show();
+										}
+									);
+								});
+							</script>
+						</td>
+					</tr> --%>
+						
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+<!-- 	<div class="row-fluid" style="width: 100%;">
+		<logic:present name="UserSession">
+			<table align="center">
+				<tr>
+					<td><div style="height: 10px;overflow: hidden;">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td id="tdActStream">
+						<script type="text/javascript">
+							$(document).ready(function(){
+								$.get('includes/bookmarks.jsp',{v: 'activity',hiderightbar: 1,showstream: 1,rows: 20},
+									function(data){
+										$('#tdActStream').html(data);
+										$('#tdActStream').show('fast');
+										//alert($('#btnLoadAct').length);
+										if($('#btnLoadAct').length){
+											//alert('btnLoadAct found!!!');
+											$('#btnLoadAct').click();
+										}else{
+											//alert('btnLoadAct not found!!!');
+										}
+									}
+								);
+							});
+						</script>
+					</td>
+				</tr>
+			</table>
+		</logic:present>
+	</div> -->

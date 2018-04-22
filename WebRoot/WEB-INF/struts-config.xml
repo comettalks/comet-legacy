@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<data-sources/>
+
+	<form-beans>
+		<form-bean name="LoginForm" type="edu.pitt.sis.form.LoginForm" />
+		<form-bean name="AddBookmarkColloquiumForm" type="edu.pitt.sis.form.AddBookmarkColloquiumForm" />
+		<form-bean name="ColloquiumForm" type="edu.pitt.sis.form.ColloquiumForm" />
+		<form-bean name="SignupForm" type="edu.pitt.sis.form.SignupForm" />
+		<form-bean name="CreateCommForm" type="edu.pitt.sis.form.CreateCommForm" />
+		<form-bean name="CreateSeriesForm" type="edu.pitt.sis.form.CreateSeriesForm" />
+
+		<form-bean name="AddColloquiaForm" type="org.apache.struts.action.DynaActionForm">
+		<form-property name="selected" type="java.lang.String[]"/>
+		</form-bean>         
+
+		<form-bean name="DeleteColloquiaForm" type="org.apache.struts.action.DynaActionForm">
+		<form-property name="selected" type="java.lang.String[]"/>
+		</form-bean>         
+	</form-beans>
+
+
+	<global-exceptions />
+	
+	<global-forwards>
+		<forward
+		 name="aaa.index"
+		 path="/index.do"
+		 redirect="true"
+		 contextRelative="true" />   
+		<forward
+		 name="aaa.colloquia.PreColloquiumEntry"
+		 path="/PreColloquiumEntry.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.ColloquiumEntry"
+		 path="/ColloquiumEntry.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.rpx"
+		 path="/rpx.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.rpxnow"
+		 path="/newsession.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.extlogin"
+		 path="/extlogin.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.login"
+		 path="/login.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.signin"
+		 path="/signin.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.lostpassword"
+		 path="/lostPassword.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.logout"
+		 path="/logout.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.registration.verifyemail"
+		 path="/verifyemail.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.registration.needemailconfirm"
+		 path="/needemailconfirm.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.registration.register"
+		 path="/register.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.authentication.signup"
+		 path="/signup.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.make.community"
+		 path="/makeCommunity.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.pre.make.community"
+		 path="/PreMakeCommunity.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.calendar"
+		 path="/calendar.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.presentColloquium"
+		 path="/presentColloquium.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.displayTalk"
+		 path="/displayTalk.do"
+		 redirect="true"
+		 contextRelative="true" />
+
+		<forward
+		 name="aaa.colloquia.quickbookmark"
+		 path="/quickbookmark.do"
+		 redirect="true"
+		 contextRelative="true" />
+		<forward
+		 name="aaa.colloquia.sucessBookmarkColloquium"
+		 path="/sucessBookmarkColloquium.do"
+		 redirect="true"
+		 contextRelative="true" />
+		   
+		<forward
+		 name="aaa.colloquia.groups"
+		 path="/groups.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.contacts"
+		 path="/contacts.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.friends"
+		 path="/friends.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.notifications"
+		 path="/notifications.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.request"
+		 path="/request.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.profile"
+		 path="/profile.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.MyAccount"
+		 path="/myaccount.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.stat"
+		 path="/stat.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.community"
+		 path="/community.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.tag"
+		 path="/tag.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.colloquia.annotation.popular"
+		 path="/popComingCoMeTTalk.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		 <forward
+		 name="aaa.colloquia.recommend"
+		 path="/recommendTalk.do"
+		 redirect="true"
+		 contextRelative="true" /> 		 
+		 <forward
+		 name="aaa.colloquia.cometScore.popular"
+		 path="/popCometScore.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		 <forward
+		 name="aaa.colloquia.video.popular"
+		 path="/popVideo.do"
+		 redirect="true"
+		 contextRelative="true" /> 		
+		 <forward
+		 name="aaa.colloquia.slide.popular"
+		 path="/popSlide.do"
+		 redirect="true"
+		 contextRelative="true" /> 
+		<forward
+		 name="aaa.colloquia.view.popular"
+		 path="/popView.do"
+		 redirect="true"
+		 contextRelative="true" />  		 
+		<forward
+		 name="aaa.colloquia.annotation.recent"
+		 path="/recentAnnotation.do"
+		 redirect="true"
+		 contextRelative="true" />  		 
+		<forward
+		 name="aaa.colloquia.view.recent"
+		 path="/recentView.do"
+		 redirect="true"
+		 contextRelative="true" />
+		<forward 
+		 name="aaa.colloquia.bookmark" 
+		 path="bookmarkTalk.do"
+		 redirect="true"
+		 contextRelative="true" />		 
+		<forward
+		 name="aaa.series"
+		 path="/series.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.pre.create.series"
+		 path="/PreCreateSeries.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.create.series"
+		 path="/CreateSeries.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.affiliate"
+		 path="/affiliate.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.entity"
+		 path="/entity.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.topic"
+		 path="/topic.do"
+		 redirect="true"
+		 contextRelative="true" />  
+		<forward
+		 name="aaa.search.result"
+		 path="/searchResult.do"
+		 redirect="true"
+		 contextRelative="true" /> 
+		 <forward
+		 name="aaa.advancedSearch"
+		 path="/advancedSearch.do"
+		 redirect="true"
+		 contextRelative="true" /> 
+		 <forward
+		 name="aaa.advancedSearch.result"
+		 path="/advancedSearchResult.do"
+		 redirect="true"
+		 contextRelative="true" />
+		 
+		<forward
+		 name="aaa.colloquia.connection"
+		 path="/connection.do"
+		 redirect="true"
+		 contextRelative="true" /> 
+		 
+		<forward name="aaa.speaker.speakerlist" path="/speakerlist.do"
+		redirect="true"
+		contextRelative="true">
+		</forward> 
+		
+		<forward name="aaa.speaker.speakerprofile" path="/speakerprofile.do"
+		redirect="true"
+		contextRelative="true">
+		</forward>
+		
+	</global-forwards>
+
+	<action-mappings>
+		<action forward="aaa.index" path="/index" />
+		<action path="/index" scope="request" type="edu.pitt.sis.action.ShowBarAction">
+		<forward name="Success" path="aaa.index" redirect="false" contextRelative="true" />
+		</action>              
+		
+		<action forward="aaa.colloquia.PreColloquiumEntry" path="/PreColloquiumEntry" />
+		<action path="/PreColloquiumEntry" scope="request" type="edu.pitt.sis.action.PreAddColloquiumAction">
+		<forward name="Success" path="aaa.colloquia.ColloquiumEntry" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.colloquia.ColloquiumEntry" path="/ColloquiumEntry" />         	  
+		<action attribute="ColloquiumForm" input="aaa.colloquia.ColloquiumEntry" 
+				name="ColloquiumForm" path="/PostColloquiumEntry" 
+				scope="request" type="edu.pitt.sis.action.AddColloquiumAction">
+		<forward name="Success" path="aaa.colloquia.ColloquiumEntry" redirect="true" contextRelative="true" />
+		<forward name="Failure" path="aaa.colloquia.ColloquiumEntry" redirect="true" contextRelative="true" />      
+		</action>              
+                
+		<action forward="aaa.authentication.rpx" path="/rpx" />
+		<action path="/rpx" scope="request" type="edu.pitt.sis.action.PreRPXAction">
+		<forward name="Success" path="aaa.authentication.rpxnow" redirect="false" contextRelative="true" />
+		<forward name="Home" path="aaa.index" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.authentication.rpxnow" path="/newsession" />
+
+		<action forward="aaa.authentication.extlogin" path="/extlogin" />
+
+		<action forward="aaa.authentication.login" path="/login" />         	  
+		<action path="/login" scope="request" type="edu.pitt.sis.action.HideBarAction">
+		<forward name="Success" path="aaa.authentication.signin" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.authentication.signin" path="/signin" />         	  
+		<action attribute="LoginForm" input="aaa.authentication.signin" 
+				name="LoginForm" path="/youraccount" 
+				scope="request" type="edu.pitt.sis.action.LoginAction">
+		<forward name="Success" path="aaa.index" redirect="true" contextRelative="true" />
+		<forward name="Failure" path="aaa.authentication.signin" redirect="true" contextRelative="true" />      
+		</action>              
+		
+		<action forward="aaa.authentication.logout" path="/logout" />         	  
+		<action path="/logout" scope="request" type="edu.pitt.sis.action.LogoutAction">
+		<forward name="Success" path="aaa.index" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.registration.register" path="/register" />         	  
+		<action path="/register" scope="request" type="edu.pitt.sis.action.HideBarAction">
+		<forward name="Success" path="aaa.registration.signup" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.registration.verifyemail" path="/verifyemail" />
+		
+		<action forward="aaa.registration.signup" path="/signup" />         	  
+		<action attribute="SignupForm" input="aaa.registration.signup" 
+				name="SignupForm" path="/registration" 
+				scope="request" type="edu.pitt.sis.action.SignupAction">
+		<forward name="Success" path="aaa.index" redirect="false" contextRelative="true" />
+		<forward name="Email" path="aaa.registration.needemailconfirm" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.registration.signup" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.calendar" path="/calendar" />
+		<action path="/calendar" scope="request" type="edu.pitt.sis.action.ListMonthCalAction">
+		<forward name="Success" path="aaa.calendar" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+		
+		<action forward="aaa.colloquia.presentColloquium" path="/presentColloquium" />         	  
+		<action path="/presentColloquium" scope="request" type="edu.pitt.sis.action.PresentColloquiumAction">
+		<forward name="Success" path="aaa.colloquia.presentColloquium" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.displayTalk" path="/displayTalk" />         	  
+		<action attribute="AddBookmarkColloquiumForm" input="aaa.colloquia.displayTalk" 
+				name="AddBookmarkColloquiumForm" path="/bookmarkColloquium" 
+				scope="request" type="edu.pitt.sis.action.AddBookmarkColloquiumAction">
+		<forward name="Success" path="aaa.colloquia.presentColloquium" redirect="true" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.calendar" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.quickbookmark" path="/quickbookmark" />         	  
+		<action attribute="AddBookmarkColloquiumForm" input="aaa.colloquia.quickbookmark" 
+				name="AddBookmarkColloquiumForm" path="/postQuickBookmark" 
+				scope="request" type="edu.pitt.sis.action.AddBookmarkColloquiumAction">
+		<forward name="Success" path="aaa.colloquia.sucessBookmarkColloquium" redirect="true" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.calendar" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.contacts" path="/contacts" />         	  
+		<action path="/contacts" scope="request" type="edu.pitt.sis.action.ContactsAction">
+		<forward name="Success" path="aaa.colloquia.contacts" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.groups" path="/groups" />         	  
+		<action path="/groups" scope="request" type="edu.pitt.sis.action.GroupsAction">
+		<forward name="Success" path="aaa.colloquia.groups" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.friends" path="/friends" />         	  
+		<action path="/friends" scope="request" type="edu.pitt.sis.action.FriendsAction">
+		<forward name="Success" path="aaa.colloquia.friends" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.notifications" path="/notifications" />         	  
+		<action path="/notifications" scope="request" type="edu.pitt.sis.action.NotifyAction">
+		<forward name="Success" path="aaa.colloquia.notifications" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.request" path="/request" />         	  
+		<action path="/request" scope="request" type="edu.pitt.sis.action.RequestAction">
+		<forward name="Success" path="aaa.colloquia.request" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.profile" path="/profile" />         	  
+		<action path="/profile" scope="request" type="edu.pitt.sis.action.ProfileAction">
+		<forward name="Success" path="aaa.colloquia.profile" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+
+		<action forward="aaa.colloquia.MyAccount" path="/myaccount" />         	  
+		<action path="/myaccount" scope="request" type="edu.pitt.sis.action.MyAccountAction">
+		<forward name="Success" path="aaa.colloquia.MyAccount" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.authentication.login" redirect="true" contextRelative="true" />      
+		</action>              
+                
+		<action forward="aaa.pre.make.community" path="/PreMakeCommunity" />
+		<action path="/PreMakeCommunity" scope="request" type="edu.pitt.sis.action.PreCreateCommAction">
+		<forward name="Success" path="aaa.make.community" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.make.community" path="/makeCommunity" />
+		<action attribute="CreateCommForm" input="aaa.make.community" 
+			name="CreateCommForm" path="/PostNewCommunity" scope="request" type="edu.pitt.sis.action.CreateCommAction">
+		<forward name="Success" path="aaa.make.community" redirect="true" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+                
+		<action forward="aaa.pre.create.series" path="/PreCreateSeries" />
+		<action path="/PreCreateSeries" scope="request" type="edu.pitt.sis.action.PreCreateSeriesAction">
+		<forward name="Success" path="aaa.create.series" redirect="false" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.create.series" path="/CreateSeries" />
+		<action attribute="CreateSeriesForm" input="aaa.create.series" 
+			name="CreateSeriesForm" path="/PostNewSeries" scope="request" type="edu.pitt.sis.action.CreateSeriesAction">
+		<forward name="Success" path="aaa.create.series" redirect="true" contextRelative="true" />
+		<forward name="Login" path="aaa.authentication.login" redirect="false" contextRelative="true" />
+		<forward name="Failure" path="aaa.index" redirect="true" contextRelative="true" />      
+		</action>              
+                
+		<action forward="aaa.stat" path="/stat" />
+
+		<action forward="aaa.community" path="/community" />
+		<action path="/community" scope="request" type="edu.pitt.sis.action.ShowCommunityAction">
+		<forward name="Success" path="aaa.community" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.series" path="/series" />
+		<action path="/series" scope="request" type="edu.pitt.sis.action.ShowSeriesAction">
+		<forward name="Success" path="aaa.series" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.affiliate" path="/affiliate" />
+		<action path="/affiliate" scope="request" type="edu.pitt.sis.action.ShowAffiliationAction">
+		<forward name="Success" path="aaa.affiliate" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.entity" path="/entity" />
+		<action path="/entity" scope="request" type="edu.pitt.sis.action.ShowEntityAction">
+		<forward name="Success" path="aaa.entity" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.topic" path="/topic" />
+		<action path="/topic" scope="request" type="edu.pitt.sis.action.ShowTopicAction">
+		<forward name="Success" path="aaa.topic" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.tag" path="/tag" />
+		<action path="/tag" scope="request" type="edu.pitt.sis.action.ShowTagAction">
+		<forward name="Success" path="aaa.tag" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.colloquia.annotation.popular" path="/popComingCoMeTTalk" />
+		
+		<action forward="aaa.colloquia.recommend" path="/recommendTalk" />
+
+		<action forward="aaa.colloquia.cometScore.popular" path="/popCometScore" />
+		
+		<action forward="aaa.colloquia.video.popular" path="/popVideo" />
+		
+		<action forward="aaa.colloquia.slide.popular" path="/popSlide" />
+
+		<action forward="aaa.colloquia.view.popular" path="/popView" />
+
+		<action forward="aaa.colloquia.annotation.recent" path="/recentAnnotation" />
+
+		<action forward="aaa.colloquia.view.recent" path="/recentView" />
+
+		<action forward="aaa.authentication.lostpassword" path="/lostPassword" />
+
+		<action forward="aaa.search.result" path="/searchResult" />
+		
+		<action forward="aaa.advancedSearch" path="/advancedSearch" />
+		
+		<action forward="aaa.advancedSearch.result" path="/advancedSearchResult" />
+
+		<action forward="aaa.colloquia.connection" path="/connection" /> 
+		<action path="/connection" scope="request" type="edu.pitt.sis.action.ShowConnectionAction">
+		<forward name="Success" path="aaa.colloquia.connection" redirect="false" contextRelative="true" />
+		</action>              
+		
+		<action forward="aaa.speaker.speakerlist" path="/speakerlist" />
+		<action path="/speakerlist" scope="request" type="edu.pitt.sis.action.ShowSpeakerAction">
+		<forward name="Success" path="aaa.speaker.speakerlist" redirect="false" contextRelative="true" />
+		</action>              
+
+		<action forward="aaa.speaker.speakerprofile" path="/speakerprofile" />
+		<action path="/speakerprofile" scope="request" type="edu.pitt.sis.action.ShowSpeakerAction">
+		<forward name="Success" path="aaa.speaker.speakerprofile" redirect="false" contextRelative="true" />
+		</action>
+
+		<action path="/"
+				type=""
+				name=""
+				parameter="methode"
+				scope="request"
+				validate="true"
+				input="">
+			<forward name="success" path="" />
+			<forward name="failure" path="" />
+		</action>
+	</action-mappings>
+
+   <message-resources parameter="edu.pitt.sis.ApplicationResources" />
+
+   <plug-in className="org.apache.struts.tiles.TilesPlugin">
+   		<set-property property="definitions-config" value="/WEB-INF/aaa-tiles.xml"/>
+   		<set-property property="definitions-debug" value="2"/>
+   		<set-property property="definitions-parser-details" value="2"/>
+   		<set-property property="definitions-parser-validate" value="true"/>
+   </plug-in>
+
+</struts-config>

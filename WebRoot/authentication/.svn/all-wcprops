@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cometrepo/!svn/ver/244/comet/WebRoot/authentication
+END
+extlogin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/687/comet/WebRoot/authentication/extlogin.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/authentication/login.jsp
+END
+rpx.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/244/comet/WebRoot/authentication/rpx.jsp
+END
+logoutXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/authentication/logoutXML.jsp
+END
+loginXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/687/comet/WebRoot/authentication/loginXML.jsp
+END
+lostPassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/authentication/lostPassword.jsp
+END

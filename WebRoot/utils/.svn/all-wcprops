@@ -1,0 +1,521 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/cometrepo/!svn/ver/357/comet/WebRoot/utils
+END
+popSeries.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/popSeries.jsp
+END
+mailreminder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/mailreminder.jsp
+END
+namedEntity_latest.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cometrepo/!svn/ver/481/comet/WebRoot/utils/namedEntity_latest.jsp
+END
+popSlideTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/28/comet/WebRoot/utils/popSlideTalk.jsp
+END
+getUserIDByScreenNameXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/getUserIDByScreenNameXML.jsp
+END
+_atom.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/517/comet/WebRoot/utils/_atom.jsp
+END
+postNote.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/221/comet/WebRoot/utils/postNote.jsp
+END
+recentSeries.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/recentSeries.jsp
+END
+namedEntity_need_redesign.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/namedEntity_need_redesign.jsp
+END
+getFacebookFriends.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cometrepo/!svn/ver/250/comet/WebRoot/utils/getFacebookFriends.jsp
+END
+addCommentXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/addCommentXML.jsp
+END
+tagCloud.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/515/comet/WebRoot/utils/tagCloud.jsp
+END
+loadCommentsXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/loadCommentsXML.jsp
+END
+linkedin.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/linkedin.html
+END
+postUserNotified.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cometrepo/!svn/ver/314/comet/WebRoot/utils/postUserNotified.jsp
+END
+ical.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/ical.jsp
+END
+facebook.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/facebook.jsp
+END
+impact.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cometrepo/!svn/ver/391/comet/WebRoot/utils/impact.jsp
+END
+recentAnnotatedTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/recentAnnotatedTalk.jsp
+END
+loadImpact.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/loadImpact.jsp
+END
+getEmails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/88/comet/WebRoot/utils/getEmails.jsp
+END
+recentCommunity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/recentCommunity.jsp
+END
+popSeriesXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/popSeriesXML.jsp
+END
+atom.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/atom.jsp
+END
+rss.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/rss.jsp
+END
+speakers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/speakers.jsp
+END
+postLike.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/309/comet/WebRoot/utils/postLike.jsp
+END
+linkedinfriends.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/linkedinfriends.jsp
+END
+postTags.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/221/comet/WebRoot/utils/postTags.jsp
+END
+postTalk2Group.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/68/comet/WebRoot/utils/postTalk2Group.jsp
+END
+postMember.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/postMember.jsp
+END
+deleteTalks.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/309/comet/WebRoot/utils/deleteTalks.jsp
+END
+removeBookmarkXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/removeBookmarkXML.jsp
+END
+namedEntity_new.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/namedEntity_new.jsp
+END
+comment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/comment.jsp
+END
+share.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/share.jsp
+END
+getLinkedInFriends.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/cometrepo/!svn/ver/559/comet/WebRoot/utils/getLinkedInFriends.jsp
+END
+scholarCitationStat.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/scholarCitationStat.jsp
+END
+bookmarkPage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/bookmarkPage.jsp
+END
+_gcal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/496/comet/WebRoot/utils/_gcal.jsp
+END
+namedEntity_very_slow_but_work.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/namedEntity_very_slow_but_work.jsp
+END
+getComments.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/106/comet/WebRoot/utils/getComments.jsp
+END
+postDelete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/postDelete.jsp
+END
+namedEntity_bk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/namedEntity_bk.jsp
+END
+namedEntity_safe.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/namedEntity_safe.jsp
+END
+calExt.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/calExt.jsp
+END
+popVideoTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/179/comet/WebRoot/utils/popVideoTalk.jsp
+END
+postBookmark.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/534/comet/WebRoot/utils/postBookmark.jsp
+END
+series.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/series.jsp
+END
+popImpact.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/popImpact.jsp
+END
+loadTagsXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/loadTagsXML.jsp
+END
+loadComments.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/106/comet/WebRoot/utils/loadComments.jsp
+END
+namedEntity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/482/comet/WebRoot/utils/namedEntity.jsp
+END
+linkedin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/linkedin.jsp
+END
+sendEmails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/471/comet/WebRoot/utils/sendEmails.jsp
+END
+popCometScoreTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/120/comet/WebRoot/utils/popCometScoreTalk.jsp
+END
+popViewedTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/popViewedTalk.jsp
+END
+loadTalks.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cometrepo/!svn/ver/746/comet/WebRoot/utils/loadTalks.jsp
+END
+getRatingXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/getRatingXML.jsp
+END
+friendlinks.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/friendlinks.html
+END
+recentSeriesXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/recentSeriesXML.jsp
+END
+loadTalkXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/678/comet/WebRoot/utils/loadTalkXML.jsp
+END
+recommendTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/223/comet/WebRoot/utils/recommendTalk.jsp
+END
+linkedinfriends.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/linkedinfriends.html
+END
+popGroupXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/popGroupXML.jsp
+END
+postSubscribe.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cometrepo/!svn/ver/492/comet/WebRoot/utils/postSubscribe.jsp
+END
+recentViewedTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/recentViewedTalk.jsp
+END
+getTags.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/getTags.jsp
+END
+recentGroupXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/recentGroupXML.jsp
+END
+updateVoteAjax.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/256/comet/WebRoot/utils/updateVoteAjax.jsp
+END
+popAnnotatedTalk.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cometrepo/!svn/ver/120/comet/WebRoot/utils/popAnnotatedTalk.jsp
+END
+_rss.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cometrepo/!svn/ver/517/comet/WebRoot/utils/_rss.jsp
+END
+postGroups.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cometrepo/!svn/ver/470/comet/WebRoot/utils/postGroups.jsp
+END
+replyComment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/replyComment.jsp
+END
+popCommunity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/319/comet/WebRoot/utils/popCommunity.jsp
+END
+sendEmailsXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/sendEmailsXML.jsp
+END
+addRatingXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cometrepo/!svn/ver/397/comet/WebRoot/utils/addRatingXML.jsp
+END
+tags.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/tags.jsp
+END
+sponsor.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cometrepo/!svn/ver/164/comet/WebRoot/utils/sponsor.jsp
+END
+tag.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cometrepo/!svn/ver/391/comet/WebRoot/utils/tag.jsp
+END
+email.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/106/comet/WebRoot/utils/email.jsp
+END
+feed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cometrepo/!svn/ver/397/comet/WebRoot/utils/feed.jsp
+END
+postExternalProfile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cometrepo/!svn/ver/5/comet/WebRoot/utils/postExternalProfile.jsp
+END
+postComment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cometrepo/!svn/ver/221/comet/WebRoot/utils/postComment.jsp
+END
+addBookmarkXML.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cometrepo/!svn/ver/534/comet/WebRoot/utils/addBookmarkXML.jsp
+END
+_ical.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cometrepo/!svn/ver/690/comet/WebRoot/utils/_ical.jsp
+END

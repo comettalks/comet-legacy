@@ -1,0 +1,226 @@
+10
+
+dir
+361
+http://halley.exp.sis.pitt.edu/svn/cometrepo/comet/WebRoot/ckeditor/plugins
+http://halley.exp.sis.pitt.edu/svn/cometrepo
+
+
+
+2011-10-18T18:09:47.545592Z
+5
+chirayu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+aa5327e5-e9af-40ea-a733-f4ade88149f0
+
+about
+dir
+
+basicstyles
+dir
+
+blockquote
+dir
+
+button
+dir
+
+clipboard
+dir
+
+colorbutton
+dir
+
+contextmenu
+dir
+
+dialog
+dir
+
+dialogui
+dir
+
+domiterator
+dir
+
+editingblock
+dir
+
+elementspath
+dir
+
+enterkey
+dir
+
+entities
+dir
+
+fakeobjects
+dir
+
+filebrowser
+dir
+
+find
+dir
+
+flash
+dir
+
+floatpanel
+dir
+
+font
+dir
+
+format
+dir
+
+forms
+dir
+
+horizontalrule
+dir
+
+htmldataprocessor
+dir
+
+htmlwriter
+dir
+
+iframedialog
+dir
+
+image
+dir
+
+indent
+dir
+
+justify
+dir
+
+keystrokes
+dir
+
+link
+dir
+
+list
+dir
+
+listblock
+dir
+
+maximize
+dir
+
+menu
+dir
+
+menubutton
+dir
+
+newpage
+dir
+
+pagebreak
+dir
+
+panel
+dir
+
+panelbutton
+dir
+
+pastefromword
+dir
+
+pastetext
+dir
+
+popup
+dir
+
+preview
+dir
+
+print
+dir
+
+removeformat
+dir
+
+resize
+dir
+
+richcombo
+dir
+
+save
+dir
+
+scayt
+dir
+
+selection
+dir
+
+showblocks
+dir
+
+smiley
+dir
+
+sourcearea
+dir
+
+specialchar
+dir
+
+styles
+dir
+
+stylescombo
+dir
+
+tab
+dir
+
+table
+dir
+
+tabletools
+dir
+
+templates
+dir
+
+toolbar
+dir
+
+uicolor
+dir
+
+undo
+dir
+
+wsc
+dir
+
+wysiwygarea
+dir
+

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration//EN" "http://jakarta.apache.org/struts/dtds/tiles-config.dtd">
+<tiles-definitions>
+	<definition name="aaa.default" path="/default.jsp">
+		<put name="header" value="/includes/header.jsp" />
+		<put name="sidebar" value="/includes/sidebar.jsp"  />
+		<put name="footer" value="/includes/footer.jsp" />
+	</definition>
+	<definition name="aaa.default.nosidebar" path="/defaultNoSideBar.jsp">
+		<put name="header" value="/includes/header.jsp" />
+		<put name="footer" value="/includes/footer.jsp" />
+	</definition>
+	<definition name="aaa.default.rightsidebar" path="/defaultwithrightsidebar.jsp">
+		<put name="header" value="/includes/header.jsp" />
+		<put name="rightsidebar" value="/includes/calendar.jsp" />
+		<put name="footer" value="/includes/footer.jsp" />
+	</definition>
+	<definition name="aaa.default.leftsidebar" path="/defaultwithleftsidebar.jsp">
+		<put name="header" value="/includes/header.jsp" />
+		<put name="leftsidebar" value="/includes/calendar.jsp" />
+		<put name="footer" value="/includes/footer.jsp" />
+	</definition>
+	<definition name="aaa.default.bothsidebars" path="/defaultwithbothsidebars.jsp">
+		<put name="header" value="/includes/header.jsp" />
+		<put name="leftsidebar" value="/includes/sidebar.jsp" />
+		<put name="rightsidebar" value="/includes/calendar.jsp" />
+		<put name="footer" value="/includes/footer.jsp" />
+	</definition>
+	<definition name="aaa.colloquia.sucessBookmarkColloquium" path="/colloquia/successBookmark.jsp">
+	</definition>
+<!-- 	<definition name="aaa.index" extends="aaa.default">
+		<put name="mainwindow" value="news.jsp" />
+		<put name="title" value="Welcome to the Adaptive Academic Announcement Project" />
+	</definition> -->
+	<definition name="aaa.colloquia.presentColloquium" 
+		path="/colloquia/presentColloquium.jsp">
+	</definition>
+	<definition name="aaa.index" extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="main.jsp" />
+		<put name="title" value="CoMeT | Home" />
+	</definition>
+	<definition name="aaa.colloquia.ColloquiumEntry" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/colloquia/ColloquiumEntry.jsp" />
+		<put name="title" value="CoMeT | Colloquium Entry Form" />
+	</definition>
+	<definition name="aaa.authentication.rpx" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/rpx.jsp" />
+		<put name="title" value="CoMeT | Authenticated" />
+	</definition>
+	<definition name="aaa.authentication.rpxnow" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/rpx.jsp" />
+		<put name="title" value="CoMeT | Authenticated" />
+	</definition>
+	<definition name="aaa.authentication.extlogin" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/extlogin.jsp" />
+		<put name="title" value="CoMeT | Authenticated" />
+	</definition>
+	<definition name="aaa.authentication.login" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/login.jsp" />
+		<put name="title" value="CoMeT | Login" />
+	</definition>
+	<definition name="aaa.authentication.signin" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/login.jsp" />
+		<put name="title" value="CoMeT | Login" />
+	</definition>
+	<definition name="aaa.authentication.lostpassword" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/authentication/lostPassword.jsp" />
+		<put name="title" value="CoMeT | Lost Password" />
+	</definition>
+	<definition name="aaa.registration.needemailconfirm" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/registration/emailconfirm.jsp" />
+		<put name="title" value="CoMeT | Email Confirmation" />
+	</definition>
+	<definition name="aaa.registration.verifyemail" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/registration/verifyemail.jsp" />
+		<put name="title" value="CoMeT | Email Verification" />
+	</definition>
+	<definition name="aaa.registration.register" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/registration/register.jsp" />
+		<put name="title" value="CoMeT | Signup" />
+	</definition>
+	<definition name="aaa.registration.signup" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" 
+			value="/registration/register.jsp" />
+		<put name="title" value="CoMeT | Signup" />
+	</definition>
+	<definition name="aaa.calendar" 
+		extends="aaa.default.leftsidebar">
+		<put name="mainwindow" value="/includes/bookmarks.jsp" />
+		<put name="title" value="CoMeT | Calendar" />
+	</definition>
+	<definition name="aaa.Impact" 
+		extends="aaa.default.rightsidebar">
+		<put name="mainwindow" value="/includes/bookmarks.jsp?impact=1" />
+		<put name="title" value="CoMeT | Impact Summary" />
+	</definition>
+<!--  
+	<definition name="aaa.colloquia.presentColloquium" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/colloquia/presentColloquium.jsp" />
+		<put name="title" value="CoMeT | Colloquium Detail" />
+	</definition>
+-->	
+	<definition name="aaa.colloquia.groups" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/profile/groups.jsp" />
+		<put name="title" value="CoMeT | Groups" />
+	</definition>
+	<definition name="aaa.colloquia.contacts" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/profile/contacts.jsp" />
+		<put name="title" value="CoMeT | External Email Contacts" />
+	</definition>
+	<definition name="aaa.colloquia.friends" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/profile/friends.jsp" />
+		<put name="title" value="CoMeT | Friends" />
+	</definition>
+	<definition name="aaa.colloquia.notifications" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/profile/notifications.jsp" />
+		<put name="title" value="CoMeT | Notifications" />
+	</definition>
+	<definition name="aaa.colloquia.request" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/profile/request.jsp" />
+		<put name="title" value="CoMeT | Requests" />
+	</definition>
+	<definition name="aaa.colloquia.profile" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/includes/bookmarks.jsp?t=profile" />
+		<put name="title" value="CoMeT | Profile" />
+	</definition>
+	<definition name="aaa.colloquia.MyAccount" 
+		extends="aaa.default.rightsidebar">
+		<put name="mainwindow" value="/includes/bookmarks.jsp" />
+		<put name="title" value="CoMeT | My Account" />
+	</definition>
+	<definition name="aaa.make.community" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/community/makeComm.jsp" />
+		<put name="title" value="CoMeT | Create Your Group" />
+	</definition>
+	<definition name="aaa.create.series" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/series/createNewSeries.jsp" />
+		<put name="title" value="CoMeT | Create New Series" />
+	</definition>
+	<definition name="aaa.stat" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="stat.jsp" />
+		<put name="title" value="CoMeT | Colloquia" />
+	</definition>
+	<definition name="aaa.community" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/community/community.jsp" />
+		<put name="title" value="CoMeT | Group" />
+	</definition>
+	<definition name="aaa.tag" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/tag.jsp" />
+		<put name="title" value="CoMeT | Tag" />
+	</definition>
+	<definition name="aaa.colloquia.annotation.popular" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/popAnnotatedTalk.jsp" />
+		<put name="title" value="CoMeT | Popular Forthcoming Talks" />
+	</definition>
+	<definition name="aaa.colloquia.recommend" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/recommendTalk.jsp" />
+		<put name="title" value="CoMeT | Recommended Talks" />
+	</definition>
+	<definition name="aaa.colloquia.cometScore.popular" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/popCometScoreTalk.jsp" />
+		<put name="title" value="CoMeT | Higest Comet Score Talks" />
+	</definition>
+	<definition name="aaa.colloquia.video.popular" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/popVideoTalk.jsp" />
+		<put name="title" value="CoMeT | Popular Talks with Videos" />
+	</definition>
+	<definition name="aaa.colloquia.slide.popular" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/popSlideTalk.jsp" />
+		<put name="title" value="CoMeT | Popular Talks with Slides" />
+	</definition>
+	<definition name="aaa.colloquia.view.popular" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/popViewedTalk.jsp" />
+		<put name="title" value="CoMeT | Popular Viewed Talks" />
+	</definition>
+	<definition name="aaa.colloquia.annotation.recent" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/recentAnnotatedTalk.jsp" />
+		<put name="title" value="CoMeT | Recent Annotated Talks" />
+	</definition>
+	<definition name="aaa.colloquia.view.recent" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/utils/recentViewedTalk.jsp" />
+		<put name="title" value="CoMeT | Recent Viewed Talks" />
+	</definition>
+	<definition name="aaa.series" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/series/series.jsp" />
+		<put name="title" value="CoMeT | Colloquium Series" />
+	</definition>
+	<definition name="aaa.affiliate" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/affiliate/affiliate.jsp" />
+		<put name="title" value="CoMeT | Affiliation" />
+	</definition>
+	<definition name="aaa.entity" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/entity/entity.jsp" />
+		<put name="title" value="CoMeT | Entity Browsing" />
+	</definition>
+	<definition name="aaa.topic" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/topic/topic.jsp" />
+		<put name="title" value="CoMeT | Topic" />
+	</definition>
+	<definition name="aaa.search.result" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/searchResult.jsp" />
+		<put name="title" value="CoMeT | Search Results" />
+	</definition>
+	<definition name="aaa.advancedSearch" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/advancedSearch.jsp" />
+		<put name="title" value="CoMeT | Advanced Search" />
+	</definition>
+	<definition name="aaa.advancedSearch.result" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/advancedSearchResult.jsp" />
+		<put name="title" value="CoMeT | Search Results" />
+	</definition>	
+	
+	<definition name="aaa.colloquia.connection" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/includes/bookmarks.jsp?v=connection" />
+		<put name="title" value="CoMeT | Connection" />
+	</definition>
+
+	<definition name="aaa.speaker.speakerlist"
+ 
+		extends="aaa.default.nosidebar">
+		
+ 		<put name="mainwindow" value="/speaker/speakerlist.jsp" />
+
+ 		<put name="title" value="CoMeT | Speaker List" />
+	
+ 	</definition>
+
+ 	<definition name="aaa.speaker.speakerprofile" 
+		extends="aaa.default.nosidebar">
+		<put name="mainwindow" value="/speaker/speakerprofile.jsp" />
+		<put name="title" value="CoMeT | Speaker Profile" />
+	</definition>		
+</tiles-definitions>

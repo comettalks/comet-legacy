@@ -1,0 +1,345 @@
+.input.btn { 
+  color:#003399; 
+	font: bold 0.7em verdana,helvetica,sans-serif; 
+	background-color: #99CCFF; 
+  border: 2px solid; 
+	border-color: #0066CC #003366 #003366 #0066CC; 
+  filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa'); 
+} 
+.H1 {
+	color: black;    
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Times;
+	}
+.H2 {
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Times;
+	}
+.H3 {
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Times;
+	}
+.footer {
+	color: black; /* #333333; */
+	font-weight: normal;
+	font-size: 8px;
+	font-family: Times;
+	}
+.navbar { 
+	color: green; 
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	background-color: #008b00; */
+	}
+.error { 
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.note { 
+	color: gray;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+/*-------------- User Info Section ------------------*/	
+.userinfo-table {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px 0px;
+	border-style: outset outset outset outset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	border-collapse: separate;
+	background-color: white;
+	}
+.userinfo-table th {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: inset inset inset inset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+.userinfo-table td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: inset inset inset inset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+/*-------------- News Section ------------------*/	
+.list-column1 { 
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #008b00
+	}
+.list-column2 { 
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC
+	}	
+.list-header { 
+	color: yellow;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	background-color: #008b00 */
+	}
+.list-row-even { 
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #99CC99;
+	}
+.list-row-odd { 
+	color: green;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	}
+/*-------------- PASA Timeline Section ------------------*/	
+.timeline-header { 
+	color: #003300;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	background-color: #008b00 */
+	}
+.timeline-detail{
+	color: green;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	background-color: #66CC33 */
+	}
+/*-------------- Forum and Link Section ------------------*/	
+.newlink-header { 
+	color: green;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.newforum-header { 
+	color: green;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.menulink A:link{text-decoration: none; color:#006633}
+.menulink A:visited{text-decoration: none; color:#006633}
+.menulink A:hover{text-decoration: underline; color:#006633}
+/*-------------- Reading Example Section ------------------*/
+.readingEx-header { 
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #006633;	
+	}
+.readingEx-row-odd {
+	color: black;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	}
+.readingEx-row-even {
+	color: black;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	}
+.readingEx-more-header {
+	color: #006600;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.readingEx-more-body {
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}	
+.readingEx-more-divider {
+	color: #006600;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+/*-------------- Math Example Section ------------------*/
+.mathEx-header { 
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #006633;	
+	}
+.mathEx-row-odd {
+	color: black;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	}
+.mathEx-row-even {
+	color: black;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	}
+.mathEx-more-header {
+	color: #006600;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.mathEx-more-body {
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}	
+.mathEx-more-divider {
+	color: #006600;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+/*-------------- Table Example Section ------------------*/	
+.mathEx-more-table {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px 0px;
+	border-style: outset outset outset outset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	border-collapse: separate;
+	background-color: white;
+	}
+.mathEx-more-table th {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: inset inset inset inset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+.mathEx-more-table td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: inset inset inset inset;
+	border-color: rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0) rgb(0, 102, 0);
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+/*-------------- Login Section ------------------*/	
+.loginhead {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.loginsubhead {
+	color: #006633;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+.loginsubheaderror {
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    }    
+.loginbody {
+	color: #000000;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}			
+/*-------------- FAQ Section ------------------*/
+.question {
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Times;
+	}
+.answer {
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: Times;
+	}
+/*-------------- In General by KIT ------------------*/	
+.relatelinkhead {
+	color: #003300;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Times;
+	}
+.relatelink {
+	color: #003300;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Times;
+	}
+.GoToplink {
+	color: green;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Times;
+	}
+.content {
+	color: black;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+.reference {
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Times;
+	}
+.backtrackingmenu {
+	color: #006633;
+	font-weight: normal;
+	font-size: 10px;
+	font-family: Times;
+	}
+/*-------------- Side Bar Section by KIT ------------------*/		
+.Ghead {
+	color: #003300;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Times;	
+	}
+.Glink {
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Times;
+	}	
